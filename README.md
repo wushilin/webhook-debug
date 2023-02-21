@@ -5,7 +5,7 @@ This software actually accepts any input requests, and save the raw traffic, and
 
 # Running
 
-java -jar build/xxxx.jar
+`java -jar build/xxxx.jar`
 
 
 # Testing
