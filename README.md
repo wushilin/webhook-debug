@@ -7,6 +7,14 @@ This software actually accepts any input requests, and save the raw traffic, and
 
 `java -jar build/xxxx.jar`
 
+# Configuration
+You don't need to configure anything. The dumped files will be put into current folder, in format of yyyy/MM/dd/HH/mm folder when the request happened.
+
+If you don't like the default parameters, you may consider customizing these opitons:
+
+1. Bind address by using command line arg: -Dserver.address=127.0.0.1
+2. Bind port by using command line arg: -Dserver.port=9078
+3. Destination folder by using command line arg: -Ddump.dest.folder=/tmp
 
 # Testing
 `curl --data-binary "Some-payload" -H "TEST: TEST-VALUE" -X POST "http://localhost:8080/testabc?hello=b&hello=c"`
