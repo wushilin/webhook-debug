@@ -45,7 +45,7 @@ class WebService {
     @RequestMapping("/*")
     fun doWork(req: HttpServletRequest, resp: HttpServletResponse) {
         val now = Date()
-        val destFile = java.io.File(formatSuffix(now))
+        val destFile = java.io.File(baseFolder, formatSuffix(now))
         val parentFile = destFile.parentFile
         if(!parentFile.exists() ) {
             parentFile.mkdirs()
