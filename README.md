@@ -36,7 +36,10 @@ $ java -jar \
 
 # Testing
 ```bash
-$ curl --data-binary "Some-payload" -H "TEST: TEST-VALUE" -X POST "http://localhost:8080/testabc?hello=b&hello=c"
+$ curl --data-binary "Some-payload" \
+    -H "TEST: TEST-VALUE" \ 
+    -X POST \
+    "http://localhost:8080/testabc?hello=b&hello=c"
 ```
 
 Sample recording:
