@@ -2,7 +2,7 @@ This software actually accepts any input requests, and save the raw traffic, and
 
 # Building
 ```
-$ gradle clean bootJar
+$ ./gradlew clean bootJar
 ```
 
 # Configuration
