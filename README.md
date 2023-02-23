@@ -21,24 +21,44 @@ If you don't like the default parameters, you may consider customizing these opi
 
 Sample recording:
 ```bash
-$ cat 2023/02/21/15/39/59.244-000001.txt 
-METHOD: POST
-HOST: localhost:8080
-URL: http://localhost:8080/testabc
-URI: /testabc
-QUERY_STRING: hello=b&hello=c
-REMOTE_ADDR: 127.0.0.1
-REMOTE_USER: null
-REMOTE_HOST: 127.0.0.1
-REMOTE_PORT: 56394
-HEADER: host = [localhost:8080]
-HEADER: user-agent = [curl/7.79.1]
-HEADER: accept = [*/*]
-HEADER: test = [TEST-VALUE]
-HEADER: content-length = [12]
-HEADER: content-type = [application/x-www-form-urlencoded]
-BODY(BASE64-ENCODED):
-U29tZS1wYXlsb2Fk⏎               
+$ cat 2023/02/21/15/39/59.244-000001.json
+```
+
+```json
+{
+  "method" : "POST",
+  "serverName" : "localhost",
+  "serverPort" : 8080,
+  "queryString" : "hello=b&hello=c",
+  "remoteInfo" : {
+    "user" : null,
+    "host" : "127.0.0.1",
+    "port" : 51847,
+    "address" : "127.0.0.1"
+  },
+  "headers" : [ {
+    "name" : "host",
+    "values" : [ "localhost:8080" ]
+  }, {
+    "name" : "user-agent",
+    "values" : [ "curl/7.79.1" ]
+  }, {
+    "name" : "accept",
+    "values" : [ "*/*" ]
+  }, {
+    "name" : "test",
+    "values" : [ "TEST-VALUE" ]
+  }, {
+    "name" : "content-length",
+    "values" : [ "8188" ]
+  }, {
+    "name" : "content-type",
+    "values" : [ "application/x-www-form-urlencoded" ]
+  } ],
+  "body" : "IyE...",
+  "url" : "http://localhost:8080/testabc",
+  "uri" : "/testabc"
+}
 ```
 
 # Enjoy

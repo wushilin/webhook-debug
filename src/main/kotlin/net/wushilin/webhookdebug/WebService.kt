@@ -39,7 +39,7 @@ class WebService {
         val dString = df.format(now)
         val tf = SimpleDateFormat("ss.SSS")
         val tString = tf.format(now)
-        return "$dString/$tString-$idString.txt"
+        return "$dString/$tString-$idString.json"
     }
 
     @RequestMapping("/*")
