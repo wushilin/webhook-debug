@@ -1,4 +1,8 @@
-This software actually accepts any input requests, and save the raw traffic, and tell client it is okay.
+This software actually accepts any incoming HTTP requests, and save the raw traffic for investigation, and tell client it is okay.
+
+# Use cases
+1. Testing git webhook - you want to know what parameter, what format, what headers will be sent over
+2. Testing API - Client declare they have sent everything correctly, but you can't prove them wrong.
 
 # Building
 ```
