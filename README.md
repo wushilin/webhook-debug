@@ -20,7 +20,9 @@ If you don't like the default parameters, you may consider customizing these opi
 
 # Running
 
-Running at port 8080, dump to current folder:
+**This program requires JAVA 17**
+
+(Default) Running at port 8080, dump to current folder:
 ```bash
 $ java -jar build/libs/webhook-debug-0.0.1-SNAPSHOT.jar
 ```
