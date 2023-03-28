@@ -19,8 +19,12 @@ class WebService {
         fun getBase():java.io.File {
             var baseFolder = System.getProperty("dump.dest.folder")
             if (baseFolder == null || baseFolder.trim().isEmpty()) {
-                baseFolder = ".";
+                baseFolder = System.getenv("DUMP_DEST_FOLDER")
+                if(baseFolder == null || baseFolder.trim().isEmpty()) {
+                    baseFolder = ".";
+                }
             }
+
 
             while(baseFolder.endsWith("/")) {
                 baseFolder = baseFolder.substring(0, baseFolder.length - 1)
