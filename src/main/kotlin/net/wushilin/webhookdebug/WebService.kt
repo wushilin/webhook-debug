@@ -17,7 +17,7 @@ class WebService {
         val baseFolder = getBase()
         val sequence = AtomicLong(0L);
         val randStart = Random().nextLong() % 10000;
-        val logger = LoggerFactory.getLogger(WebService.javaClass)
+        val logger = LoggerFactory.getLogger(WebService::class.java)
         fun getBase():java.io.File {
             var baseFolder = System.getProperty("dump.dest.folder")
             if (baseFolder == null || baseFolder.trim().isEmpty()) {
