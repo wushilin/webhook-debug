@@ -48,7 +48,7 @@ class WebService {
         return "$dString/$tString-$idString.json"
     }
 
-    @RequestMapping("/*")
+    @RequestMapping("/**")
     fun doWork(req: HttpServletRequest, resp: HttpServletResponse) {
         logger.info("${req.method} ${req.requestURL} BEGIN")
         try {
